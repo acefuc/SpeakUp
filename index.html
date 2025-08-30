@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeakUp - Denuncias Anónimas de Acoso Escolar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SpeakUp</div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#reporte">Realiza tu Reporte</a></li>
+                <li><a href="#que-es">¿Qué es el Bullying?</a></li>
+                <li><a href="#recursos">Recursos de Ayuda</a></li>
+                <li><a href="#faq">Preguntas Frecuentes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1>No estás solo/a.</h1>
+                <p>Un espacio seguro y anónimo para reportar el acoso escolar.</p>
+                <a href="#reporte" class="btn">Hacer un Reporte</a>
+            </div>
+        </section>
+
+        <section id="reporte">
+            <h2>Realiza tu Reporte Anónimo</h2>
+            <p>Tu identidad es completamente anónima. No se recopilará ninguna información personal.</p>
+            <form id="report-form">
+                <div class="form-group">
+                    <label for="tipo-acoso">Tipo de Acoso (puedes seleccionar varios):</label>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="fisico" name="tipo-acoso" value="Físico">
+                        <label for="fisico">Físico</label>
+                        <input type="checkbox" id="verbal" name="tipo-acoso" value="Verbal">
+                        <label for="verbal">Verbal</label>
+                        <input type="checkbox" id="social" name="tipo-acoso" value="Social">
+                        <label for="social">Social</label>
+                        <input type="checkbox" id="ciberbullying" name="tipo-acoso" value="Ciberbullying">
+                        <label for="ciberbullying">Ciberbullying</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Describe lo que está sucediendo:</label>
+                    <textarea id="descripcion" name="descripcion" rows="6" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="lugar">¿Dónde ocurre el acoso?</label>
+                    <input type="text" id="lugar" name="lugar">
+                </div>
+                <div class="form-group">
+                    <label for="frecuencia">¿Con qué frecuencia ocurre?</label>
+                    <select id="frecuencia" name="frecuencia">
+                        <option value="una-vez">Solo una vez</option>
+                        <option value="a-veces">Algunas veces</option>
+                        <option value="frecuentemente">Frecuentemente</option>
+                        <option value="diario">Casi todos los días</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Enviar Reporte</button>
+            </form>
+            <div id="form-message" class="hidden">¡Gracias! Tu reporte ha sido enviado de forma anónima.</div>
+        </section>
+
+        <section id="que-es">
+            <h2>¿Qué es el Bullying?</h2>
+            <div class="info-cards">
+                <div class="card">
+                    <h3>Acoso Físico</h3>
+                    <p>Incluye golpear, empujar, o cualquier forma de contacto físico no deseado.</p>
+                </div>
+                <div class="card">
+                    <h3>Acoso Verbal</h3>
+                    <p>Insultos, apodos ofensivos, burlas constantes y amenazas.</p>
+                </div>
+                <div class="card">
+                    <h3>Acoso Social</h3>
+                    <p>Excluir a alguien del grupo, difundir rumores o avergonzar en público.</p>
+                </div>
+                <div class="card">
+                    <h3>Ciberbullying</h3>
+                    <p>Acoso a través de medios digitales como redes sociales, mensajes de texto o correos electrónicos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="recursos">
+            <h2>Recursos de Ayuda</h2>
+            <ul>
+                <li><strong>Línea 100:</strong> Llama gratis para recibir orientación y soporte emocional.</li>
+                <li><strong>SíSeVe del MINEDU:</strong> Plataforma virtual para reportar violencia escolar.</li>
+                <li><strong>CHAT 100:</strong> Servicio de chat del Ministerio de la Mujer y Poblaciones Vulnerables.</li>
+            </ul>
+        </section>
+
+        <section id="faq">
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq-item">
+                <h3>¿Mi reporte es realmente anónimo?</h3>
+                <p>Sí. No recopilamos ninguna información personal como tu nombre, correo electrónico o dirección IP.</p>
+            </div>
+            <div class="faq-item">
+                <h3>¿Qué pasa después de que envío mi reporte?</h3>
+                <p>La información es revisada por personal capacitado que tomará las medidas apropiadas para investigar y abordar la situación, siempre protegiendo la confidencialidad.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Tu Voz Segura. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
